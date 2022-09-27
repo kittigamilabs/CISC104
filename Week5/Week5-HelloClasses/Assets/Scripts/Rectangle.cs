@@ -1,8 +1,7 @@
 ﻿using System;
+
 public class Rectangle
 {
-    private float perimeter;
-    private float area;
     private float height;
     private float width;
 
