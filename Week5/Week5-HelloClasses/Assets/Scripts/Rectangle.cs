@@ -12,6 +12,14 @@ public class Rectangle
         width = 0f;
     }
 
+    public Rectangle(float newHeight, float newWidth)
+    {
+        // Should consider testing for positive numbers before accepting the parameters
+
+        height = newHeight;
+        width = newWidth;
+    }
+
     public float GetPerimeter()
     {
         return 2 * height + 2 * width;
