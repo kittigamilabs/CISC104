@@ -1,0 +1,29 @@
+Feature
+
+Reset button
+
+
+
+Dart
+
+DartBoard
+- Player 1
+- Player 2
+- Darts
+- Players interact by throwing darts
+
+Players 
+- Success Rate
+- Modification to success rate
+- Number of Bullseye
+- Functions to be distracted by another player
+
+
+Unit Testing:
+
+PlayerOne
+- Verify default value to hit.
+- Test Adding Distraction and then seeing impact upon score to hit.
+- Verify that using new round function sets player probabilities back to expected defaults.
+- Verify that using new game function sets bullseyes to zero and probability back to default.
+
