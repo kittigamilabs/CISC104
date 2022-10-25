@@ -9,7 +9,7 @@ public class PlayerTwo
 	// The amount of distraction provided by another player.
 	private int amountOfDistraction = 0;
 
-    public int BullsEyes { get; set; }
+    public int BullsEyes { get; private set; }
 
 	private bool DistractedSomeone = false;
 
@@ -25,10 +25,13 @@ public class PlayerTwo
 
 		if(successRoll >= (naturalSuccessRate + amountOfDistraction))
         {
-			return true;
+			BullsEyes++;
+            NewRound();
+            return true;
         }
         else
         {
+            NewRound();
             return false;
         }
     }
@@ -47,7 +50,7 @@ public class PlayerTwo
 		amountOfDistraction = newAmountOfDistraction;
     }
 
-	public void NewRound()
+	private void NewRound()
 	{
 		amountOfDistraction = 0;
 		DistractedSomeone = false;

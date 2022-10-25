@@ -56,11 +56,8 @@ public class DartBoardManager : MonoBehaviour
     public void CalculateRoundResults()
     {
         // Call functions and move logic into separate classes.
-        if (playerOne.HitBullseye()) playerOne.BullsEyes++;
-        if (playerTwo.HitBullseye()) playerTwo.BullsEyes++;
-
-        playerOne.NewRound();
-        playerTwo.NewRound();
+        playerOne.HitBullseye();
+        playerTwo.HitBullseye();
 
         roundNumber++;
     }
